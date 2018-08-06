@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @keyframes play {
+            100% {
+                    transform: rotate(360deg);
+            }
+        }
+        .container {
+            height: 800px;
+            width: 800px;
+            border: 1px solid crimson;
+            margin: 100px 100px 100px 100px;
+            overflow: hidden;
+            position: absolute;
+            top: 50px;
+            left: 280px;
+        }
+        .sub {
+            height: 500px;
+            width: 500px;
+            transition: all 2s linear;
+            background-image: url(../resources/img/iphone.jpg);
+            background-position: center;
+            background-size: cover;
+            border-radius: 50%;
+            position: absolute;
+            top:150px;
+            left:150px;
+        }
+        .sub:hover {
+            animation: play 4s linear  ;
+        }
+
+        .play {
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="sub"></div>
+    <div class="play">P</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+#signal{
+    width: 100%;
+    height: 32px;
+    background-color:black;
+    display: flex;
+    color: white;
+    display:flex;
+    justify-content: space-between;
+    font-weight: 100;
+    font-size:12px;
+}
+#signal-left div{
+    margin-left:4px;
+
+}
+#signal-left{
+flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+#signal-center {
+     width:50px;
+    height: 32px;
+}
+#signal-right{
+flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#signal-right div{
+    /*margin-right: 4px;*/
+}
+/*   信号   */
+#signal-area{
+    height:16px ;
+    width:30px;
+    display: flex;
+    align-items: flex-end;
+}
+#signal-area div{
+    width:4px;
+    /*background-color: white;*/
+    margin-left: 3px;
+    border-radius: 50px;
+}
+#signal-area div:nth-child(1){
+   height: 5px;
+}
+#signal-area div:nth-child(2){
+    height: 8px;
+}
+#signal-area div:nth-child(3){
+    height:13px;
+}
+#signal-area div:nth-child(4){
+    height:17px;
+}
+.signal-ok{
+    background-color: white;
+}
+.signal-lose{
+    background-color:grey;
+}
+/* 信号结束*/
+/* 电池开始*/
+#battery{
+    width: 40px;
+    height: 18px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#battery-body{
+    height: 12px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 1px;
+    display: flex;
+    align-items: center;
+}
+#battery-header{
+height: 6px;
+    width: 2px;
+    background-color: white;
+}
+#battery-core{
+    height: 10px;
+    width: 22px;
+    background-color: green;
+}
+@keyframes charge {
+    0%{
+        width:1px;
+        background-color:red;
+    }
+    20%{
+        width:6px;
+        background-color: gold;
+    }
+    80%{
+        width: 24px;
+        background-color:lawngreen;
+    }
+    100%{
+        width: 30px;
+        background-color: green;
+    }
+}
+.charging{
+    animation: charge 1s linear infinite ;
+}
+/*  电池结束  */
+/*wifi开始*/
+#wifibox{
+    height: 30px;
+    width: 30px;
+    margin-right: 4px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+#wifi{
+    height:19px ;
+    width:19px;
+    display: flex;
+    overflow: hidden;
+    transform: rotate(15deg);
+    transform: rotate(45deg);
+}
+#wifiiiner{
+    height: 19px;
+    width: 19px;
+    transform: rotate(-45deg);
+    display: flex;
+    justify-content: center;
+}
+.wifi-ok{
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+}
+.wifi1{
+    width: 10px;
+    height: 10px;
+    top: 20px;
+}
+.wifi2{
+     width: 15px;
+     height: 15px;
+     top: 15px;
+}
+.wifi3{
+    width: 20px;
+    height: 20px;
+    top: 10px;
+}
+.wifi4{
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    animation: wifiloss 1s infinite ;
+}
+@keyframes wifiloss  {
+    0%{
+        border: 3px solid grey;
+    }
+    100%{
+        border: 3px solid white;
+    }
+
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>19.19</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #wrap{
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            border: 1px solid red;
+            display: flex;
+            flex-flow:column;
+            justify-content:space-between;
+        }
+        .sub{
+            width: 100%;
+        }
+        #d1{
+            height: 100px;
+            background-color: red;
+        }
+        #d2{
+            height: 100px;
+            background-color: yellow;
+        }
+        #d3{
+            flex: 1;
+            background-color: blue;
+        }
+        #d4{
+            height: 100px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <div id="d1" class="sub"></div>
+    <div id="d2" class="sub"></div>
+    <div id="d3" class="sub"></div>
+    <div id="d4" class="sub"></div>
+
+</div>
+</body>
+</html>
